@@ -1,0 +1,7 @@
+.darkbar{
+    color:black !important;
+    font-weight: bold;
+}
+.navbar .navbar-toggler{
+    background: rgb(12, 81, 230);
+}

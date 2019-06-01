@@ -22,24 +22,14 @@ class SignUpPage extends Component {
       <MDBContainer fluid>
         <MDBRow style={{ margin: "10px" }}>
           <MDBCol />
-          <MDBCol md="8" style={{ border: "2px solid black", padding: "2%" }}>
-            <h4 className="text-center"> advertisment</h4>
+          <MDBCol md="8" style={{ padding: "2%" }}>
+          <img  className="img-fluid "src={'https://res.cloudinary.com/dcw1i97ph/image/upload/v1559319433/61530373_421228672049870_3598138457433571328_n_oqpp1f.png'} style={{width:'100%'}} />
           </MDBCol>
           <MDBCol />
         </MDBRow>
         <MDBRow style={{ margin: "10px" }}>
-          <MDBCol
-            md="2"
-            style={{
-              border: "2px solid black",
-              padding: "20% 2%",
-              height: "80vh"
-            }}
-          >
-            {" "}
-            <h4 className="text-center"> advertisment</h4>{" "}
-          </MDBCol>
-          <MDBCol md="8">
+        <MDBCol ></MDBCol>
+          <MDBCol md="7">
             <h4>Sign Up</h4>
             <MDBRow>
               <MDBCol md="6">
@@ -63,6 +53,17 @@ class SignUpPage extends Component {
             <MDBRow>
         <MDBBtn color="primary">Sign Up</MDBBtn>
         </MDBRow>
+          </MDBCol>
+          <MDBCol
+            md="2"
+            style={{
+              
+              
+              height: "80vh"
+            }}
+          >
+            {" "}
+            <img className="img-fluid" style={{height:'100%',margin:'0 auto'}} src={`https://res.cloudinary.com/dcw1i97ph/image/upload/v1559196004/adsecond_uylr2t.png`} />
           </MDBCol>
           <MDBCol />
         </MDBRow>

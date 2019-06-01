@@ -4,6 +4,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBSelect, MDBBtn } from "mdbreact";
 import SelectComponent from "../SmallComponent/InputForm/SelectBox";
 // import SelectField from "../SmallComponent/InputForm/SelectBox";
 import TextareaPage from "../SmallComponent/InputForm/TextArea";
+
 class SignUpPage extends Component {
   constructor(props) {
     super(props);
@@ -23,24 +24,15 @@ class SignUpPage extends Component {
       <MDBContainer fluid>
         <MDBRow style={{ margin: "10px" }}>
           <MDBCol />
-          <MDBCol md="8" style={{ border: "2px solid black", padding: "2%" }}>
-            <h4 className="text-center"> advertisment</h4>
+          <MDBCol md="8" style={{  }}>
+            {/* <h4 className="text-center"> advertisment</h4> */}
+            <img  className="img-fluid "src={'https://res.cloudinary.com/dcw1i97ph/image/upload/v1559319433/61530373_421228672049870_3598138457433571328_n_oqpp1f.png'} style={{width:'100%'}} />
           </MDBCol>
           <MDBCol />
         </MDBRow>
         <MDBRow style={{ margin: "10px" }}>
-          <MDBCol
-            md="2"
-            style={{
-            
-             
-              height: "80vh"
-            }}
-          >
-            {" "}
-            <img src="https://res.cloudinary.com/dcw1i97ph/image/upload/v1559196004/adsecond_uylr2t.png" className='img-fluid' style={{height:'100%'}} />
-          </MDBCol>
-          <MDBCol md="8">
+      <MDBCol></MDBCol>
+          <MDBCol md="7">
             <h4>Company On Board</h4>
             <MDBRow style={{marginTop:'10px'}}>
               <MDBCol md="6">
@@ -108,8 +100,20 @@ class SignUpPage extends Component {
               <MDBBtn color="primary">Submit</MDBBtn>
             </MDBRow>
           </MDBCol>
+          <MDBCol
+            md="3"
+            style={{
+              height: "100%",
+              padding:'0 5%'
+            }}
+          >
+            {" "}
+            <img src="https://res.cloudinary.com/dcw1i97ph/image/upload/v1559196004/adsecond_uylr2t.png" className='img-fluid' style={{height:'100%'}}  />
+          </MDBCol>
           <MDBCol />
         </MDBRow>
+        <br/>
+        <br/>
       </MDBContainer>
     );
   }

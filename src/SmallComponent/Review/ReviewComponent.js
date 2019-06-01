@@ -12,10 +12,11 @@ import {
 const CardExample = props => {
   return (
    
-      <MDBCard style={{ width: "44rem" }}>
+      <MDBCard style={{ width: "100%" }}>
         <MDBCardBody>
           <MDBCardTitle>"review title"</MDBCardTitle>
-          <MDBCardText>
+        
+            <div>
           <h6>
               Job Title: <span style={{fontWeight:'bold'}}> {props.jobTitle} </span>
             </h6>
@@ -32,11 +33,12 @@ const CardExample = props => {
             <h6>
               Racial Bias : <span style={{fontWeight:'bold'}}>{props.Racialbias}</span >
             </h6>
-            <h6>Props</h6>
+            <h6>Pros</h6>
             <p><span style={{fontWeight:'bold'}}> {props.Pros}</span></p>
             <h6>Cons</h6>
             <p><span style={{fontWeight:'bold'}}> {props.Cons}</span></p>
-          </MDBCardText>
+            </div>
+         
         </MDBCardBody>
       </MDBCard>
     

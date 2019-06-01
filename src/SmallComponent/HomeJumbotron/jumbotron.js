@@ -14,10 +14,9 @@ const JumbotronPage = () => {
       
       className="landing"
     >
-      <h2 className="display-4 text-center">Fluid jumbotron</h2>
+      <h2 className="display-4 text-center">Insite.pk</h2>
       <p className="lead text-center">
-        This is a modified jumbotron that occupies the entire horizontal space
-        of its parent.
+        Welcome to Insite.pk the very first website of its kind
       </p>
       <MDBCol md="6" style={{margin:'0px auto'}}>
         <MDBFormInline className="md-form">

@@ -1,13 +1,13 @@
 import React from "react";
 
 import { MDBNav, MDBNavItem, MDBNavLink } from "mdbreact";
-
+import './style.css'
 export default () => (
   
 
-    <MDBNav className="nav-pills nav-justified" style={{backgroundColor:'yellow',padding:'10px 5px'}}>
+    <MDBNav className="nav-pills nav-justified" style={{backgroundColor:'blue',padding:'10px 5px'}}>
       <MDBNavItem>
-        <MDBNavLink  to="#!">Overview</MDBNavLink>
+        <MDBNavLink  to="#!" >Overview</MDBNavLink>
       </MDBNavItem>
       <MDBNavItem>
         <MDBNavLink to="#!">Review</MDBNavLink>

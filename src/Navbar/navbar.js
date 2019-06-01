@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBContainer, MDBIcon } from "mdbreact";
-
+import "./style.css";
 class NavbarPage extends Component {
 state = {
   collapseID: ""
@@ -16,27 +16,27 @@ render() {
   return (
     
      
-      <MDBNavbar color="blue" dark expand="md" >
+      <MDBNavbar color="white" dark expand="md" >
         <MDBNavbarBrand>
-          <strong className="white-text">Insite</strong>
+  <img src="https://res.cloudinary.com/dcw1i97ph/image/upload/v1559318720/61782866_447540992742130_2290848977735647232_n_lmy7ix.jpg" style={{width:'70px',height:'70px'}}/>
         </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.collapseID} navbar>
+        <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} className="darkbar"/>
+        <MDBCollapse id="navbarCollapse3" isOpen={this.state.collapseID} className="darkbar" navbar>
           <MDBNavbarNav left>
             <MDBNavItem active>
-              <MDBNavLink to="/">Home</MDBNavLink>
+              <MDBNavLink to="/" className="darkbar" >Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/company-onboard">Add Company</MDBNavLink>
+              <MDBNavLink to="/company-onboard" className="darkbar">Add Company</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/view-companies">Browse Companies</MDBNavLink>
+              <MDBNavLink to="/view-companies" className="darkbar">Browse Companies</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Contact Us</MDBNavLink>
+              <MDBNavLink to="#!" className="darkbar">Contact Us</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/signup">Sign Up</MDBNavLink>
+              <MDBNavLink to="/signup" className="darkbar">Sign Up</MDBNavLink>
             </MDBNavItem>
             {/* <MDBNavItem>
               <MDBDropdown>
